@@ -1,0 +1,133 @@
+<h1 id="[h1]" ><l10n>　　표 삽입</l10n></h1>
+<form action="" method="get" style="margin-top:10px">
+<div id="[columns_alert]" style="color:red;display:none"><l10n>You must enter a number of columns</l10n></div>
+<div id="[rows_alert]" style="color:red;display:none"><l10n>You must enter a number of rows</l10n></div>
+<style>
+  .buttons input[type="button"] {
+    border: 1px solid #000; /* 원하는 색상과 두께로 변경 */
+    padding: 5px 10px; /* 버튼 안쪽 여백 조정 */
+    border-radius: 5px; /* 테두리 모서리 둥글게 */
+  }
+
+  input[type="text"] {
+    border: 1px solid #000; /* 원하는 색상과 두께로 변경 */
+    padding: 5px; /* 입력 칸 안쪽 여백 조정 */
+    border-radius: 5px; /* 테두리 모서리 둥글게 */
+  }
+
+  select {
+    border: 1px solid #000; /* 원하는 색상과 두께로 변경 */
+    padding: 5px; /* 선택 상자 안쪽 여백 조정 */
+    border-radius: 5px; /* 테두리 모서리 둥글게 */
+  }
+</style>
+
+<table>
+  <tbody>
+  <div>
+    <tr>
+      　표 제목:
+      <input type="text" name="[caption]" id="[caption]" style="width:50%" title="표의 제목 입력"/>
+      <br/><br/>
+    </tr>
+    <hr><br/>
+    <tr>
+      　행:
+      <input type="text" name="[rows]" id="[rows]" size="5" title="행 수 입력"  />
+      　열:
+      <input type="text" name="[cols]" id="[cols]" size="5" title="열 수 입력"  />
+      　표 크기:
+      <input type="text" name="[width]" id="[width]" size="5" title="표의 가로 길이" />
+      <select size="1" name="[unit]" id="[unit]" title="단위">
+        <option value="%"               ><l10n>%</l10n></option>
+        <option value="px"              ><l10n>픽셀</l10n></option>
+        <option value="em"              >Em</option>
+      </select>
+    </tr>
+    <br/><br/>
+    <tr>
+      
+      　너비 열 고정 : <input type="checkbox" name="[fixed]" id="[fixed]" value="on" />
+    </tr>
+    <tr>
+      <br/><br/>
+      　레이아웃정렬:
+      <select size="0" name="[align]" id="[align]"
+        title="Positioning of this table">
+        <option value=""                             ><l10n>설정안함</l10n></option>
+        <option value="left"                         ><l10n>내용왼쪽정렬</l10n></option>
+        <option value="right"                        ><l10n>내용오른쪽정렬</l10n></option>
+        <option value="texttop"                      ><l10n>내용상단</l10n></option>
+        <option value="absmiddle"                    ><l10n>내용중간</l10n></option>
+        <option value="baseline"                     ><l10n>기준선</l10n></option>
+        <option value="absbottom"                    ><l10n>내용하단</l10n></option>
+        <option value="bottom"                       ><l10n>요소 아래에 맞춤</l10n></option>
+        <option value="middle"                       ><l10n>요소 중간에 맞춤</option>
+        <option value="top"                          ><l10n>요소 위에 맞춤</l10n></option>
+      </select>
+    </tr><br/><br/>
+    <hr>
+    <tr>
+      <br/>
+      　선 굵기:
+      <input type="text" name="[border]" id="[border]" size="1" title="_(Leave empty for no border)" /> 픽셀
+      　　　
+      선 타입:
+      <select size="1" name="[border_style]" id="[border_style]" title="_(Style of the border)">
+        <option value=""   >설정안함</option>
+        <option value="solid"   >실선</option>
+        <option value="dotted"  >점선</option>
+        <option value="dashed"  >파선</option>
+        <option value="double"  >이중선</option>
+        <option value="groove"  >홈선</option>
+        <option value="ridge"   >액자선</option>
+        <option value="inset"   >오목산</option>
+        <option value="outset"  >볼록선</option>
+      </select>
+      <br/><br/>
+      <tr>
+  </div>
+  <div>
+    <l10n>　색 코드:</l10n> 
+    <input type="text" size="8" id="[border_color]" name="[border_color]"/>
+    <br/><br/>
+    <l10n>　테두리 축소:</l10n> 
+    <input type="checkbox" name="[border_collapse]" id="[border_collapse]" value="on" />
+  </div>
+  <br/><hr><br/>
+  <div>
+    <l10n>　셀의 간격:</l10n>
+    <input type="text" name="[spacing]" id="[spacing]" size="2" title="_(Space between adjacent cells)" />
+    <l10n>　셀의 내용 간격:</l10n>
+    <input type="text" name="[padding]" id="[padding]" size="2" title="_(Space between content and border in cell)" />
+    <br/><br/><hr>
+  </div>
+  </tbody>
+</table>
+
+<br />
+
+<fieldset id="[layout_fieldset]" style="float: left; margin-left: 10px;">
+<!-- <legend><l10n>레이아웃 정렬</l10n></legend> -->
+
+<!-- <div class="fl"><l10n>Border</l10n></div> -->
+
+
+</fieldset>
+
+<fieldset  id="[spacing_fieldset]">
+<!-- <legend><l10n>간격</l10n></legend> -->
+
+<div class="space"></div>
+
+<div class="fr">
+</div>
+
+</fieldset>
+
+
+<div class="buttons" style="clear:left">
+  <input type="button" id="[ok]"     value="_(OK)"     />
+  <input type="button" id="[cancel]" value="_(Cancel)" />
+</div>
+</form>

@@ -1,0 +1,80 @@
+/*
+  height 지정 필요
+*/
+
+.table-border {
+  thead>tr>th.thin {
+    padding: 1em;
+    border: 0.1em solid rgb(200, 200, 200);
+    text-align: center;
+    background-color: rgb(219, 219, 219);
+  }
+
+  th {
+    padding: 1em;
+    border: 0.1em solid #e0e0e0;
+    text-align: center;
+    background-color: rgb(239, 239, 239);
+  }
+
+  tr>td {
+    padding: 0.75em;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    background-color: white;
+  }
+
+  tr>td.thin {
+    padding: 0;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    background-color: white;
+  }
+
+  tr>.none {
+    padding: 0;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    background-color: white;
+  }
+
+  thead {
+    position: sticky;
+    top: -1px;
+    z-index: 10;
+  }
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-border-requirement-identifierReles {
+  thead>tr>th {
+    padding: 1em;
+    border: 0.1em solid #e0e0e0;
+    text-align: center;
+    background-color: rgb(239, 239, 239);
+  }
+
+  tbody>tr>td {
+    text-align: center;
+    background-color: white;
+  }
+
+
+  tbody>tr>td.border-box {
+    padding: 0.75em;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    background-color: white;
+  }
+
+  thead {
+    position: sticky;
+    top: -1px;
+  }
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+

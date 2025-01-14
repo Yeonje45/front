@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<iconset>
+<!--TODO: Add metas -->
+  <icons>
+    <icon id="bold">
+      <default type="map">
+        <path>iconsets/Crystal/bold.svg</path>
+        <x>-1</x>
+        <y>-1</y>
+      </default>
+      <!--<de type="string">
+        <path>iconsets/Crystal/de/bold_de.gif</path>
+      </de>-->
+    </icon>
+    <icon id="italic">
+      <default type="map">
+        <path>iconsets/Crystal/italic.svg</path>
+        <x>-1</x>실행 취소
+        <y>-1</y>
+      </default>
+    </icon>
+    <icon id="underline">
+      <default type="map">
+        <path>iconsets/Crystal/underline.svg</path>
+        <x>-1</x>
+        <y>-1</y>
+      </default>
+    </icon>
+    <icon id="strikethrough">
+      <default type="map">
+        <path>iconsets/Crystal/strikethrough.svg</path>
+        <x>-1</x>
+        <y>-1</y>
+      </default>
+    </icon>
+    <icon id="subscript">
+      <default type="map">
+        <path>iconsets/Crystal/subscript.svg</path>
+        <x>-4</x>
+        <y>-3</y>
+      </default>
+    </icon>
+    <icon id="superscript">
+      <default type="map">
+        <path>iconsets/Crystal/superscript.svg</path>
+        <x>-4</x>
+        <y>-3</y>
+      </default>
+    </icon>
+    <icon id="undo">
+      <default type="map">
+        <path>iconsets/Crystal/undo.svg</path>
+        <x>-2</x>
+        <y>-2</y>
+      </default>
+    </icon>
+    <icon id="redo">
+      <default type="map">
+        <path>iconsets/Crystal/redo.svg</path>
+        <x>-2</x>
+        <y>-2</y>
+      </default>
+    </icon>
+    <icon id="cut">
+      <default type="map">
+        <path>iconsets/Crystal/cut.svg</path>
+        <x>0</x>
+        <y>0</y>
+      </default>
+    </icon>
+    <icon id="copy">
+      <default type="map">
+        <path>iconsets/Crystal/copy.svg</path>
+        <x>0</x>
+        <y>0</y>
+      </default>
+    </icon>
+    <icon id="paste">
+      <default type="map">
+        <path>iconsets/Crystal/paste.svg</path>
+        <x>0</x>
+        <y>0</y>
+      </default>
+    </icon>
+    <!-- FONT COLOR -->
+    <icon id="forecolor">
+      <default type="map">
+        <path>iconsets/Crystal/fontcolor.svg</path>
+        <x>-4</x>
+        <y>-4</y>
+      </default>
+    </icon>
+    <icon id="hilitecolor">
+      <default type="map">
+        <path>iconsets/Crystal/backgroundcolor.svg</path>
+        <x>-4</x>
+        <y>-4</y>
+      </default>
+    </icon>
+    <!-- Incerease Indent -->
+    <icon id="indent">
+      <default type="map">
+        <path>iconsets/Crystal/IncereaseIndent.svg</path>
+        <x>-3</x>
+        <y>-3</y>
+      </default>
+    </icon>
+    <!-- Decrease Indent -->
+    <icon id="outdent">
+      <default type="map">
+        <path>iconsets/Crystal/DecreaseIndent.svg</path>
+        <x>-3</x>
+        <y>-3</y>
+      </default>
+    </icon>
+    <icon id="insertimage">
+      <default type="map">
+        <path>iconsets/Crystal/insertimage.svg</path>
+        <x>-3</x>
+        <y>-3</y>
+      </default>
+    </icon>
+    <icon id="insertorderedlist">
+      <default type="map">
+        <path>iconsets/Crystal/orderedlist.svg</path>
+        <x>-3</x>
+        <y>-3</y>
+      </default>
+    </icon>
+    <icon id="insertunorderedlist">
+      <default type="map">
+        <path>iconsets/Crystal/unorderedlist.svg</path>
+        <x>-3</x>
+        <y>-3</y>
+      </default>
+    </icon>
+    <icon id="justifyleft">
+      <default type="map">
+        <path>iconsets/Crystal/justifyleft.svg</path>
+        <x>-1</x>
+        <y>-1</y>
+      </default>
+    </icon>
+    <icon id="justifyfull">
+      <default type="map">
+        <path>iconsets/Crystal/justifyfull.svg</path>
+        <x>-3</x>
+        <y>-3</y>
+      </default>
+    </icon>
+    <icon id="justifycenter">
+      <default type="map">
+        <path>iconsets/Crystal/justifycenter.svg</path>
+        <x>-1</x>
+        <y>-1</y>
+      </default>
+    </icon>
+    <icon id="justifyright">
+      <default type="map">
+        <path>iconsets/Crystal/justifyright.svg</path>
+        <x>-3</x>
+        <y>-3</y>
+      </default>
+    </icon>
+    <icon id="createlink">
+      <default type="map">
+        <path>iconsets/Crystal/createlink.svg</path>
+        <x>-3</x>
+        <y>-3</y>
+      </default>
+    </icon>
+    <icon id="unlink">
+      <default type="map">
+        <path>iconsets/Crystal/unlink.svg</path>
+        <x>-1</x>
+        <y>-1</y>
+      </default>
+    </icon>
+    <icon id="lefttoright">
+      <default type="map">
+        <path>iconsets/Crystal/lefttoright.svg</path>
+        <x>-2</x>
+        <y>-2</y>
+      </default>
+    </icon>
+    <icon id="righttoleft">
+      <default type="map">
+        <path>iconsets/Crystal/righttoleft.svg</path>
+        <x>-2</x>
+        <y>-2</y>
+      </default>
+    </icon>
+    <icon id="print">
+      <default type="map">
+        <path>iconsets/Crystal/printer.svg</path>
+        <x>-1</x>
+        <y>-1</y>
+      </default>
+    </icon>
+    <icon id="saveas">
+      <default type="map">
+        <path>iconsets/Crystal/ed_buttons_main.png</path>
+        <x>9</x>
+        <y>1</y>
+      </default>
+    </icon>
+    <icon id="removeformat">
+      <default type="map">
+        <path>iconsets/Crystal/removeformat.svg</path>
+        <x>-2</x>
+        <y>-2</y>
+      </default>
+    </icon>
+    <!-- <icon id="about">
+      <default type="map">
+        <path>iconsets/Crystal/ed_buttons_main.png</path>
+        <x>8</x>
+        <y>2</y>
+      </default>
+    </icon> -->
+    <icon id="showhelp">
+      <default type="map">
+        <path>iconsets/Crystal/showhelp.svg</path>
+        <x>-2</x>
+        <y>-2</y>
+      </default>
+    </icon>
+    <icon id="fullscreen">
+      <default type="map">
+        <path>iconsets/Crystal/fullscreen.svg</path>
+        <x>-2</x>
+        <y>-2</y>
+      </default>
+    </icon>
+    <icon id="fullscreenrestore">
+      <default type="map">
+        <path>iconsets/Crystal/fullscreenexit.svg</path>
+        <x>-2</x>
+        <y>-2</y>
+      </default>
+    </icon>
+
+  </icons>
+</iconset>

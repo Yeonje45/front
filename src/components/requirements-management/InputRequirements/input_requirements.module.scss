@@ -1,0 +1,36 @@
+.cmd_scrollbar {
+  width: 300px;
+}
+
+/* 트리구조 상위 ON/OFF 버튼 */
+.treeButton {
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+
+  // 버튼 마우스를 올릴 시에
+  &:hover {
+    border-color: black;
+    color: black;
+  }
+
+  // 버튼 클릭 시에 시에
+  &:active {
+    border-color: black !important;
+    color: black !important;
+  }
+}
+
+.resizeButton {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 6px;
+  cursor: col-resize;
+  justify-content: end;
+  resize: horizontal;
+
+  &:hover {
+    width: 6px;
+    background: #c1c3c5b4;
+  }
+}

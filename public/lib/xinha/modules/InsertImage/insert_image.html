@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insert Image</title>
+  <script type="text/javascript">
+    function i18n(str) {
+      return str;
+    }
+
+    function onOK() {
+      var required = {
+        "f_url": i18n("You must enter the URL")
+      };
+      for (var i in required) {
+        var el = document.getElementById(i);
+        if (!el.value) {
+          alert(required[i]);
+          el.focus();
+          return false;
+        }
+      }
+
+      // pass data back to the calling window
+      var fields = ["f_url", "f_alt", "f_align", "f_border",
+                    "f_horiz", "f_vert"];
+      var param = {};
+      for (var i in fields) {
+        var id = fields[i];
+        var el = document.getElementById(id);
+        param[id] = el.value;
+      }
+      window.opener.Xinha.Dialog._return(param);
+      window.close();
+      return false;
+    }
+
+    function onCancel() {
+      window.close();
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <form action="" method="get" style="padding-top:10px" id="inputs">
+    <table border="0" width="95%" style="padding: 0px; margin: 0px">
+      <tbody>
+        <tr>
+          <td style="width: 7em; text-align: right"><l10n>Image URL:</l10n></td>
+          <td><input type="text" name="f_url" id="f_url" style="width:75%"
+            title="Enter the image URL here" />
+            <button id="preview" type="button" title="Preview the image in a new window"><l10n>Preview</l10n></button>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 7em; text-align: right"><l10n>Alternate text:</l10n></td>
+          <td><input type="text" name="f_alt" id="f_alt" style="width:100%"
+            title="For browsers that don't support images" /></td>
+        </tr>
+        <tr>
+          <td style="width: 7em; text-align: right"><l10n>Border:</l10n></td>
+          <td><input type="text" name="f_border" id="f_border" size="5"
+            title="Border thickness" /></td>
+        </tr>
+        <tr>
+          <td style="width: 7em; text-align: right"><l10n>Alignment:</l10n></td>
+          <td><select name="f_align" id="f_align">
+            <option value=""><l10n>Not set</l10n></option>
+            <option value="left"><l10n>Left</l10n></option>
+            <option value="right"><l10n>Right</l10n></option>
+            <option value="top"><l10n>Top</l10n></option>
+            <option value="middle"><l10n>Middle</l10n></option>
+            <option value="bottom"><l10n>Bottom</l10n></option>
+          </select></td>
+        </tr>
+        <tr>
+          <td style="width: 7em; text-align: right"><l10n>Horizontal:</l10n></td>
+          <td><input type="text" name="f_horiz" id="f_horiz" size="5"
+            title="Horizontal padding" /></td>
+        </tr>
+        <tr>
+          <td style="width: 7em; text-align: right"><l10n>Vertical:</l10n></td>
+          <td><input type="text" name="f_vert" id="f_vert" size="5"
+            title="Vertical padding" /></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+
+    <fieldset style="float: left; margin-left: 5px;">
+      <legend><l10n>Layout</l10n></legend>
+
+      <div class="space"></div>
+
+      <div class="fl"><l10n>Alignment:</l10n></div>
+
+      <div class="space"></div>
+
+    </fieldset>
+
+    <fieldset>
+      <legend><l10n>Spacing</l10n></legend>
+
+      <div class="space"></div>
+
+      <div class="fr"><l10n>Horizontal:</l10n></div>
+      <input type="text" name="f_horiz" id="f_horiz" size="5"
+        title="Horizontal padding" />
+
+      <br />
+
+      <div class="fr"><l10n>Vertical:</l10n></div>
+      <input type="text" name="f_vert" id="f_vert" size="5"
+        title="Vertical padding" />
+
+      <div class="space"></div>
+
+    </fieldset>
+  </form>
+  <div>
+    <l10n>Image Preview:</l10n><br />
+    <iframe id="ipreview" frameborder="0" style="border : 1px solid gray;" 
+      height="200" width="100%" src="about:blank"></iframe>
+  </div>
+
+  <div class="buttons" id="buttons">
+    <input type="button" id="ok" value="OK" onclick="onOK()" />
+    <input type="button" id="cancel" value="Cancel" onclick="onCancel()" />
+  </div>
+
+  <div id="uploadedUrl" style="margin-top: 10px;"></div>
+</body>
+</html>

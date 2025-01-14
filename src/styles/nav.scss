@@ -1,0 +1,7 @@
+/* Sidebar & Global CSS */
+.nav-link {
+  &.active {
+    background-color: #4472C4;;
+    color: white;
+  }
+}

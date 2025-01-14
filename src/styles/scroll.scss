@@ -1,0 +1,21 @@
+.scrollbar-hidden {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: gray transparent;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: gray;
+  }
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

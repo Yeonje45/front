@@ -1,0 +1,113 @@
+.intro_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #22A7E5, #01285D);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  overflow: hidden;
+  z-index: 101;
+}
+
+.intro_container.hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.intro_content {
+  text-align: center;
+  color: #fff;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.logo_container {
+  margin-bottom: 1em;
+}
+
+.logo_container img {
+  max-width: 20%; 
+  height: auto;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.intro_content h1 {
+  font-size: 3em;
+  margin-bottom: 0.3em;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.intro_content p {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 1차 배경 애니메이션 */
+@keyframes swoosh {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.intro_container.visible::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(52, 152, 219, 0.8));
+  animation: swoosh 0.75s ease forwards;
+}
+
+/* H1, P 태그의 애니메이션 효과들 */
+.intro_content p {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  animation: spaceInDown 1s ease-in-out forwards;
+}
+
+@keyframes tinDownIn {
+  0% {
+    transform: translateY(-100%) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10%) scale(1.2);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes spaceInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

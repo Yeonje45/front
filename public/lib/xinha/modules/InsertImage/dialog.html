@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+    <style>
+        body {
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+        }
+        /* 버튼에 테두리 스타일 추가 */
+        #uploadButton, #ok, #cancel {
+            border: 1px solid #000; /* 검은색 테두리 */
+            padding: 5px; /* 버튼 내부 여백 */
+            border-radius: 5px; /* 둥근 테두리 */
+            background-color: #f0f0f0; /* 배경색 */
+            cursor: pointer; /* 커서 모양 변경 */
+        }
+        #uploadButton:hover, #ok:hover, #cancel:hover {
+            background-color: #e0e0e0; /* 호버 시 배경색 변경 */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1"><l10n>　　이미지 넣기</l10n></h1>
+    <!--- new stuff --->
+    <form action="" method="get" style="padding-top:10px" id="inputs">
+    <table border="0" width="95%" style="padding: 0px; margin: 0px">
+      <tbody>
+    
+      <tr>
+        <!-- <td style="width: 7em; text-align: right"><l10n>이미지 주소:</l10n></td> -->
+        <td>
+          <input type="text" name="f_url" id="f_url" style="width:75%; display: none;" />
+          <button id="preview" type="button"></button>
+        </td>
+      </tr>
+      <!-- <tr>
+        <td style="width: 7em; text-align: right"><l10n>Alternate text:</l10n></td>
+        <td><input type="text" name="f_alt" id="f_alt" style="width:100%
+          title="For browsers that don't support images" /></td>
+      </tr> -->
+      <tr>
+        <!-- <td style="width: 7em; text-align: right"><l10n>이미지 선택:</l10n></td> -->
+        <td>
+          　<input type="file" id="fileInput" style="width:75%" />
+          <button type="button" id="uploadButton" title="선택된 이미지 적용">적용</button>
+          <div id="uploadedUrl" style="margin-top: 10px;"></div>
+        </td>
+      </tr>
+    
+      </tbody>
+    </table>
+    
+    <br />
+    
+    <fieldset style="float: left; margin-left: 5px;">
+    <!-- <legend><l10n>Layout</l10n></legend> -->
+    
+    <div class="space"></div>
+    
+    <!-- <div class="fl"><l10n>Alignment:</l10n></div> -->
+    
+    <div class="space"></div>
+    
+    </fieldset>
+    
+    <fieldset>
+    <!-- <legend><l10n>Spacing</l10n></legend> -->
+    
+    <div class="space"></div>
+    
+    <!-- <div class="fr"><l10n>Horizontal:</l10n></div> -->
+    <!-- <input type="text" name="f_horiz" id="f_horiz" size="5"
+    title="Horizontal padding" /> -->
+    <hr>
+    <br />
+    
+    <!-- <div class="fr"><l10n>Vertical:</l10n></div> -->
+    <!-- <input type="text" name="f_vert" id="f_vert" size="5"
+    title="Vertical padding" /> -->
+    
+    <div class="space"></div>
+    
+    </fieldset>
+    </form>
+    <div>
+    <l10n>이미지 미리보기:</l10n><br />
+        <iframe id="ipreview" frameborder="0" style="border : 1px solid gray;" 
+        height="200" width="100%" src="about:blank"></iframe>
+    </div>
+    
+    <div class="buttons" id="buttons">
+      <input type="button" id="ok"     value="OK"     />
+      <input type="button" id="cancel" value="Cancel" />
+    </div>
+    
+    <div id="uploadedUrl" style="margin-top: 10px;"></div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.vis-item.point {
+  background-color: orangered;
+  border-color: orange;
+  box-shadow: 0 0 10px gray;
+}
+
+.vis-item.range {
+  background-color: rgb(107, 114, 128);
+  border-color: rgb(97, 104, 118);
+  color: white;
+  box-shadow: 0 0 10px gray;
+}
+
+.vis-item.vis-selected.range {
+  /* custom colors for selected range items */
+  background-color: rgb(156, 163, 175);
+  border-color: rgb(146, 153, 165);
+  box-shadow: 0 0 10px gray;
+}
+
+.vis-item.range.done {
+  background-color: rgb(13, 124, 102);
+  border-color: rgb(3, 114, 92);
+  color: white;
+  box-shadow: 0 0 10px gray;
+}
+
+.vis-item.vis-item.vis-selected.range.done {
+  /* custom colors for selected range done items */
+  background-color: rgb(65, 179, 162);
+  border-color: rgb(55, 169, 152);
+  box-shadow: 0 0 10px gray;
+}
+
+.vis-item.range.overdue {
+  background-color: rgb(186, 66, 104);
+  border-color: rgb(176, 56, 94);
+  color: white;
+  box-shadow: 0 0 10px gray;
+}
+
+.vis-item.vis-selected.range.overdue {
+  /* custom colors for selected range overdue items */
+  background-color: rgb(199, 91, 122);
+  border-color: rgb(189, 81, 112);
+  box-shadow: 0 0 10px gray;
+}
+
+// time-axis-panel parent Div ELement
+div.vis-time-axis.vis-foreground { 
+  font-weight: 'bold';
+  background-color: #52525b;
+  color: 'white' !important;
+}
+
+// time-axis-panel children Div ELement
+div.vis-time-axis.vis-foreground > div {
+  color: #ffffff !important;
+}
